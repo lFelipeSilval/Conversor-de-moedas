@@ -7,35 +7,42 @@
 }
 
 body{
-    background-color: #8a51fc;
+    background-image: url('./assets/background-image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
-   .logo{ 
+    /* .logo{ 
     width: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-bottom: 40px;
-}
+    opacity: 1; 
+} */
 
 
 main{
+    
     width: 375px;
-    background-color: #f4f4f4;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    margin: 0 auto 40px;
+    margin: 100px auto 40px;
     padding: 44px 24px 23px;
-
+    
 }
 
 
 label{
-    color: #777777;
+    color: #fdfdfd;
     font-size: 14px;
     font-weight: 400;
 }
 
 select, input{
-    background: #fFFFFF;
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid #BBBBBB;
     border-radius: 4px;
     height: 48px;
@@ -45,15 +52,28 @@ select, input{
     padding-left: 18px;
     font-size: 16px;
     font-weight: 700;
-    color: #555555;
+    color: #fdfcfc;
+    cursor: pointer;
 }
 
+select option{
+    background: #2f5bd334;
+    color:#000000;
+}
+
+select:hover, input:hover{
+    border: 1px solid #2f5bd3;
+    transition: 0.3s;
+    transform: scale(1.05);
+} 
+
+
 .convert-button{
-    background: #772FD3;
+    background: #a2a1a3;
     border-radius: 5px;
     width: 100%;
     height: 48px;
-    color: #FFFFFF;
+    color: #000000;
     border: none;   
     font-size: 18px;
     font-weight: 700;
@@ -61,17 +81,21 @@ select, input{
 }
 
 .convert-button:hover{
-    opacity: 0.8;
     cursor: pointer;
+    border: 1px solid #2f5bd3;
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 .convert-button:active{
     opacity: 0.6;
+    transition: 0.3s;
+    transform: scale(.95);
 }
 
 
 section{
-    border: 1px solid #772FD3;
+    border: 1px solid #627abd;
     border-radius: 20px;
     margin-top: 36px;
     padding: 12px;
@@ -98,7 +122,7 @@ section{
 }
 
 .currency-value, .currency-value-to-convert{
-    color: #555555;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 700;
 }
